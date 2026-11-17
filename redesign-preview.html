@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080b12">
+<title>Bydysawd Brainrot Cymru — Development Preview</title>
+<meta name="description" content="Enter the Welsh Brainrot Universe: ancient legends, modern Welsh chaos and collectible characters.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#080b12;--panel:#101724;--panel2:#141e2c;--ink:#eef1f6;--muted:#aab4c3;--gold:#f1cc72;--red:#f06479;--teal:#63d7bd;--violet:#b69bff;--line:rgba(218,228,242,.13);--glow:0 0 55px rgba(241,204,114,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 12% 8%,rgba(240,100,121,.16),transparent 36%),radial-gradient(ellipse at 86% 22%,rgba(99,215,189,.10),transparent 34%),radial-gradient(ellipse at 55% 90%,rgba(182,155,255,.10),transparent 40%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.82);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:max-content}.brand-mark{font-size:28px;filter:drop-shadow(0 0 14px rgba(240,100,121,.65))}.brand-name{font:700 12px "Space Mono",monospace;letter-spacing:.12em;color:var(--gold)}
+.navlinks{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{font:700 10px "Space Mono",monospace;letter-spacing:.08em;text-decoration:none;color:var(--muted);padding:10px;border-radius:6px;transition:.2s}.navlinks a:hover{color:var(--gold);background:rgba(241,204,114,.08)}
+.hero{min-height:650px;display:grid;align-items:center;padding:92px 0 76px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:50px}
+.eyebrow,.kicker{font:700 11px "Space Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+.eyebrow:before{content:"";display:inline-block;width:28px;height:1px;background:var(--teal);vertical-align:middle;margin-right:12px}
+h1,h2,h3,p{margin-top:0}.hero h1{font:900 clamp(38px,6vw,76px)/1.06 "Cinzel Decorative",serif;letter-spacing:-.045em;margin:22px 0;color:#f7f2e8;text-shadow:0 0 45px rgba(241,204,114,.12)}
+.hero h1 span{display:block;color:var(--gold)}.hero-copy{max-width:580px;font-size:18px;color:#c4ccd8;line-height:1.8}.hero-copy strong{color:var(--ink)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:7px;border:1px solid rgba(241,204,114,.4);text-decoration:none;font:700 11px "Space Mono",monospace;letter-spacing:.08em;transition:.22s}.btn-primary{background:linear-gradient(135deg,#f4d98e,#dcae56);color:#10131a;border-color:transparent;box-shadow:0 8px 30px rgba(241,204,114,.16)}.btn-ghost{background:rgba(255,255,255,.035);color:var(--ink)}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 38px rgba(241,204,114,.2)}
+.hero-art{position:relative;min-height:430px;display:grid;place-items:center}.sigil{width:min(390px,78vw);aspect-ratio:1;border-radius:50%;border:1px solid rgba(241,204,114,.25);display:grid;place-items:center;position:relative;background:radial-gradient(circle,rgba(241,204,114,.10),rgba(240,100,121,.04) 48%,transparent 70%);box-shadow:inset 0 0 65px rgba(241,204,114,.05),0 0 90px rgba(240,100,121,.08)}.sigil:before,.sigil:after{content:"";position:absolute;inset:8%;border:1px solid rgba(99,215,189,.18);border-radius:50%;transform:rotate(32deg) scaleX(.62)}.sigil:after{transform:rotate(-32deg) scaleX(.62);border-color:rgba(182,155,255,.2)}.dragon{font-size:clamp(110px,18vw,190px);filter:drop-shadow(0 0 35px rgba(240,100,121,.45));animation:float 5s ease-in-out infinite}.orbit{position:absolute;font:700 10px "Space Mono",monospace;letter-spacing:.16em;color:var(--gold)}.orbit.one{top:7%;left:12%}.orbit.two{right:-3%;top:46%;color:var(--teal)}.orbit.three{bottom:7%;left:17%;color:var(--violet)}@keyframes float{50%{transform:translateY(-12px) rotate(2deg)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:-2px}.stat{background:rgba(16,23,36,.88);padding:24px;text-align:center}.stat strong{display:block;font:700 26px "Cinzel Decorative",serif;color:var(--gold)}.stat span{font:10px "Space Mono",monospace;color:var(--muted);letter-spacing:.12em}
+.section{padding:94px 0}.section-head{max-width:720px;margin-bottom:36px}.section-head h2{font:700 clamp(26px,4vw,42px)/1.2 "Cinzel Decorative",serif;margin:12px 0;color:#f5eddb}.section-head p{color:var(--muted);font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tile{background:linear-gradient(145deg,rgba(20,30,44,.94),rgba(12,17,27,.96));border:1px solid var(--line);border-radius:12px;padding:25px;min-height:190px;transition:.25s;position:relative;overflow:hidden}.tile:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;right:-95px;top:-100px;background:var(--accent,rgba(241,204,114,.14));filter:blur(45px);opacity:.35}.tile:hover{transform:translateY(-5px);border-color:rgba(241,204,114,.32);box-shadow:var(--glow)}.tile .icon{font-size:29px}.tile h3{font:700 16px "Cinzel Decorative",serif;color:var(--gold);margin:16px 0 7px}.tile p{font-size:14px;color:#b7c0ce;margin:0;line-height:1.7}
+.map-panel{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:32px;border:1px solid rgba(99,215,189,.22);border-radius:14px;background:linear-gradient(120deg,rgba(99,215,189,.08),rgba(16,23,36,.94) 45%,rgba(182,155,255,.07))}.map-panel h3{font:700 21px "Cinzel Decorative",serif;color:var(--teal);margin-bottom:8px}.map-panel p{color:var(--muted);max-width:680px;margin:0}.map-link{white-space:nowrap}
+.factions{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.faction{border:1px solid var(--line);border-radius:11px;padding:22px;background:rgba(16,23,36,.86)}.faction .icon{font-size:25px}.faction h3{font:700 14px "Cinzel Decorative",serif;color:var(--gold);margin:12px 0 3px}.faction small{font:10px "Space Mono",monospace;color:var(--teal);letter-spacing:.1em}.faction p{font-size:13px;color:var(--muted);margin:12px 0 0}.primordial{margin-top:16px;padding:25px;border:1px solid rgba(182,155,255,.28);border-radius:12px;background:linear-gradient(120deg,rgba(182,155,255,.10),rgba(16,23,36,.8))}.primordial h3{color:var(--violet);font:700 16px "Cinzel Decorative",serif;margin:0 0 8px}.primordial p{margin:0;color:var(--muted)}
+.roster{padding:42px;border:1px solid rgba(241,204,114,.24);border-radius:16px;background:radial-gradient(ellipse at 50% 0,rgba(241,204,114,.12),transparent 65%),linear-gradient(145deg,#141e2c,#0c111b);text-align:center;box-shadow:0 24px 70px rgba(0,0,0,.24)}.roster h2{font:700 clamp(24px,4vw,38px) "Cinzel Decorative",serif;color:var(--gold);margin:10px 0}.roster p{max-width:640px;margin:0 auto 24px;color:var(--muted)}
+.footer{border-top:1px solid var(--line);padding:34px 0 44px;text-align:center;color:#758093;font:10px "Space Mono",monospace;letter-spacing:.12em}.footer strong{color:var(--gold)}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr;gap:18px}.hero{padding-top:70px}.hero-art{min-height:300px}.sigil{width:280px}.dragon{font-size:130px}.grid,.factions{grid-template-columns:repeat(2,1fr)}.map-panel{grid-template-columns:1fr}.map-link{justify-self:start}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,1160px)}.nav{align-items:flex-start;flex-direction:column;padding:14px 0;gap:8px}.navlinks{justify-content:flex-start}.navlinks a{padding:7px 6px;font-size:9px}.hero{min-height:auto;padding:54px 0 48px}.hero-copy{font-size:16px}.hero-art{min-height:260px}.sigil{width:230px}.dragon{font-size:108px}.stats{grid-template-columns:1fr}.stat{padding:17px}.section{padding:65px 0}.grid,.factions{grid-template-columns:1fr}.tile{min-height:0}.roster{padding:28px 20px}.map-panel{padding:24px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+<a class="brand" href="redesign-preview.html"><span class="brand-mark">🐉</span><span class="brand-name">BYDYSAWD BRAINROT CYMRU</span></a>
+<nav class="navlinks" aria-label="Main navigation"><a href="#world">THE WORLD</a><a href="#map">THE MAP</a><a href="#factions">FACTIONS</a><a href="#roster">CHARACTERS</a><a href="index.html">ORIGINAL ARCHIVE</a></nav>
+</div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow">A Welsh mythological universe</div>
+<h1>Ancient legends.<span>Modern chaos.</span></h1>
+<p class="hero-copy"><strong>Welcome to Bydysawd Brainrot Cymru.</strong> Where the old stories never really ended — they just found the valleys, discovered Wi-Fi and got considerably stranger.</p>
+<p class="hero-copy">Dragons beneath roundabouts. Otherworldly forces in the everyday. Thirty-nine known entities and a universe that refuses to behave.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="welsh-brainrot-universe-characters.html">🎴 EXPLORE THE CHARACTER ROSTER</a><a class="btn btn-ghost" href="#world">DISCOVER THE UNIVERSE ↓</a></div>
+</div>
+<div class="hero-art" aria-label="Welsh dragon emblem"><div class="sigil"><span class="orbit one">ANNWN // CYMRU</span><span class="dragon">🐉</span><span class="orbit two">MYTHOS ONLINE</span><span class="orbit three">MAE'N WIR. PROBABLY.</span></div></div>
+</div></section>
+<div class="wrap"><div class="stats"><div class="stat"><strong>39</strong><span>KNOWN ENTITIES</span></div><div class="stat"><strong>6 + 1</strong><span>FACTIONS & PRIMORDIAL</span></div><div class="stat"><strong>∞</strong><span>WAYS TO BREAK REALITY</span></div></div></div>
+<section class="section" id="world"><div class="wrap">
+<div class="section-head"><div class="kicker">01 / The universe</div><h2>Welcome to the other side of ordinary.</h2><p>Annwn and modern Cymru overlap in ways that geography, history and common sense have struggled to explain. The result is a living mythosphere shaped by old powers and contemporary Welsh life.</p></div>
+<div class="grid">
+<article class="tile" style="--accent:rgba(240,100,121,.45)"><span class="icon">📜</span><h3>The old stories stir</h3><p>Ancient powers, forgotten myths and impossible entities begin to surface as the boundary between Cymru and Annwn weakens.</p></article>
+<article class="tile" style="--accent:rgba(99,215,189,.4)"><span class="icon">🌌</span><h3>A world between worlds</h3><p>Mountains, coastlines, valleys, service stations and familiar places become part of a much stranger map.</p></article>
+<article class="tile" style="--accent:rgba(182,155,255,.4)"><span class="icon">⚡</span><h3>Reality gets weird</h3><p>Language becomes operational. Food becomes mythological. Transport routes gain agency. Stories behave like living systems.</p></article>
+</div>
+</div></section>
+<section class="section" id="map"><div class="wrap">
+<div class="section-head"><div class="kicker">02 / Explore Cymru</div><h2>The Great Map awaits.</h2><p>The original universe guide contains the illustrated map, regions, origin story, official timeline and character-stat explanations. Those established resources remain available in the original archive while this redesign is developed.</p></div>
+<div class="map-panel"><div><h3>THE GREAT MAP OF THE WELSH BRAINROT UNIVERSE</h3><p>Return to the existing illustrated map and explore the regions of the universe. The map and original guide are being preserved during this redesign.</p></div><a class="btn btn-ghost map-link" href="index.html">OPEN THE ORIGINAL MAP ↗</a></div>
+</div></section>
+<section class="section" id="factions"><div class="wrap">
+<div class="section-head"><div class="kicker">03 / The great factions</div><h2>Power takes many forms.</h2><p>Six factions shape the universe. Beyond them stands something older — a presence that does not quite belong to any side.</p></div>
+<div class="factions">
+<article class="faction"><span class="icon">🔥</span><h3>Tylwyth y Tân</h3><small>CHILDREN OF FIRE</small><p>Industrial valleys, music, passion and controlled chaos.</p></article>
+<article class="faction"><span class="icon">📜</span><h3>Urdd y Mabinogi</h3><small>ORDER OF THE MABINOGI</small><p>Ancient mythic bloodlines, honour and storytelling.</p></article>
+<article class="faction"><span class="icon">🌊</span><h3>Plant yr Annwn</h3><small>CHILDREN OF THE OTHERWORLD</small><p>Tricksters, shapeshifters and beings of the in-between.</p></article>
+<article class="faction"><span class="icon">🎙️</span><h3>Crachach Cosmig</h3><small>THE COSMIC ESTABLISHMENT</small><p>Unknowable power, influence and cosmic bureaucracy.</p></article>
+<article class="faction"><span class="icon">⚙️</span><h3>Y Peiriant</h3><small>THE MACHINE-BORN</small><p>Corrupted technology and mechanical folklore.</p></article>
+<article class="faction"><span class="icon">🍟</span><h3>Clwb y Cyrri Sawss</h3><small>THE LATE NIGHT ALLIANCE</small><p>Service-station prophets, takeaway kings and parking-lot druids.</p></article>
+</div>
+<div class="primordial"><h3>⛰️ Yr Unfactioned</h3><p>Not quite a faction. Primordial beings older than the factions and the war — outside the neat categories that everyone else tries to impose.</p></div>
+</div></section>
+<section class="section" id="roster"><div class="wrap"><div class="roster">
+<div class="kicker">04 / Collect the chaos</div><h2>Y Bestiarium Cymreig</h2><p>Thirty-nine known entities. Discover their origins, powers, weaknesses, faction ties and the strange stories connecting them across the universe.</p><a class="btn btn-primary" href="welsh-brainrot-universe-characters.html">🎴 VIEW ALL 39 CHARACTER CARDS</a>
+</div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><strong>BYDYSAWD BRAINROT CYMRU</strong><br>ANCIENT LEGENDS. MODERN CHAOS. MAE'N WIR. PROBABLY.<br><br>DEVELOPMENT PREVIEW — LIVE WEBSITE UNCHANGED</div></footer>
+</body></html>
