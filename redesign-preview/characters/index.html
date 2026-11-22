@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#07090d">
-<title>Characters & Collectibles | Bydysawd Brainrot Cymru</title>
-<meta name="description" content="Explore the Awakened Deck and living roster of Bydysawd Brainrot Cymru — a cinematic Welsh mythological universe.">
+<title>Characters & Collectibles | Bydysawd Cymru – The First Collection</title>
+<meta name="description" content="Explore the first collectible collection from Bydysawd Cymru, the first world within the Bydysawd universe.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/design-system.css">
@@ -50,19 +50,19 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar"><div class="container nav-shell">
-<a class="brand" href="../redesign-preview.html" aria-label="Bydysawd Brainrot Cymru home"><span class="brand-mark" aria-hidden="true">ᛟ</span><span class="brand-copy"><span class="brand-name">BYDYSAWD BRAINROT CYMRU</span><span class="brand-sub">THE WELSH MYTHIC UNIVERSE</span></span></a>
+<a class="brand" href="../index.html" aria-label="Bydysawd home"><span class="brand-mark" aria-hidden="true">ᛟ</span><span class="brand-copy"><span class="brand-name">BYDYSAWD CYMRU</span><span class="brand-sub">THE FIRST WORLD OF BYDYSAWD</span></span></a>
 <nav class="nav-links" aria-label="Main navigation"><a class="nav-link" href="../redesign-preview.html#world">The world</a><a class="nav-link" href="#factions">Factions</a><a class="nav-link" href="../redesign-preview.html#stories">Stories</a><a class="nav-link" href="#collection">Characters</a></nav>
 </div></header>
 <section class="directory-hero"><div class="container">
 <div class="eyebrow">The living roster · Character archive</div>
 <h1 class="directory-title">Every legend has a beginning.<br>Every beginning has a character.</h1>
-<p class="directory-intro">Meet the strange, powerful and occasionally deeply inconvenient beings that inhabit Bydysawd Brainrot Cymru. Start with the 39 origin cards of the Awakened Deck — then follow the universe as it grows.</p>
+<p class="directory-intro">Meet the strange, powerful and occasionally deeply inconvenient beings that inhabit Bydysawd Cymru. Start with the 39 origin cards of the Awakened Deck — then follow the universe as it grows.</p>
 <div class="directory-meta"><span><strong>39</strong>Origin cards · Set One</span><span><strong>040</strong>Y Storiwr · Living roster</span><span><strong>7</strong>Great factions</span></div>
 </div></section>
 <main id="main" class="directory-main"><div class="container">
 <section id="collection">
-<div class="eyebrow">The Awakened Deck · 001–039</div><h2 class="directory-heading">The original awakenings</h2>
-<p class="directory-sub">Thirty-nine first manifestations. Welsh myth, local legends, music, food, strange technology and everyday chaos — all breaking through into one connected universe.</p>
+<div class="eyebrow">Bydysawd Cymru – The First Collection · 001–039</div><h2 class="directory-heading">The First Collection</h2>
+<p class="directory-sub">The first collectible release. Welsh myth, local legends, music, food, strange technology and everyday chaos — all breaking through into one connected universe.</p>
 <div class="directory-tools">
 <label class="sr-only" for="character-search">Search characters</label><input id="character-search" class="directory-search" type="search" placeholder="Search the roster…" autocomplete="off">
 <label class="sr-only" for="collection-filter">Filter collection</label><select id="collection-filter" class="directory-select"><option value="all">All characters</option><option value="origin">Awakened Deck · Set One</option><option value="living">Living roster</option></select>
@@ -92,7 +92,7 @@
 <a class="button button-primary" href="../redesign-preview.html#stories">Enter the story</a>
 </section>
 </div></main>
-<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand">BYDYSAWD BRAINROT CYMRU</div><p class="footer-note">Ancient legends. Modern chaos. Proudly strange. Deeply interconnected. Always evolving.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="../redesign-preview.html">Home</a><a href="#factions">Factions</a><a href="../redesign-preview.html#stories">Stories</a></nav></div><div class="container footer-bottom"><span>Mae'n wir · Probably</span><span>Development branch · Phase 3</span><span>© Vizard Comms</span></div></footer>
+<footer class="site-footer"><div class="container footer-grid"><div><div class="footer-brand">BYDYSAWD CYMRU</div><p class="footer-note">Ancient legends. Modern chaos. Proudly strange. Deeply interconnected. Always evolving.</p></div><nav class="footer-links" aria-label="Footer navigation"><a href="../index.html">Home</a><a href="#factions">Factions</a><a href="../redesign-preview.html#stories">Stories</a></nav></div><div class="container footer-bottom"><span>Mae'n wir · Probably</span><span>Development branch · Phase 3</span><span>© Vizard Comms</span></div></footer>
 <script>
 (()=>{const search=document.getElementById('character-search');const filter=document.getElementById('collection-filter');const cards=[...document.querySelectorAll('.character-tile')];const count=document.getElementById('result-count');const empty=document.getElementById('empty-state');function apply(){const q=search.value.trim().toLowerCase();const f=filter.value;let visible=0;cards.forEach(card=>{const ok=(f==='all'||card.dataset.collection===f)&&card.dataset.search.includes(q);card.hidden=!ok;if(ok)visible++;});count.textContent=String(visible).padStart(2,'0')+' CHARACTERS SHOWN';empty.style.display=visible?'none':'block';}search.addEventListener('input',apply);filter.addEventListener('change',apply);})();
 </script>
