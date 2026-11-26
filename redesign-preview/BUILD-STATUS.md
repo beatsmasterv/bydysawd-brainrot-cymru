@@ -46,15 +46,15 @@ Retain the established dark, cinematic fantasy atmosphere and neon palette. The 
 ## Build and quality checklist
 
 ### Foundation and structure
-- [ ] Confirm every navigation link and internal page target.
+- [x] First navigation pass across the seven main hub/index pages. Corrected seven over-traversing relative links on the Radio Annwn page; the remaining chapter and individual profile-page links still need a full sweep.
 - [ ] Confirm every image and asset path resolves.
 - [ ] Check consistent navigation, footer and page titles across all pages.
 - [ ] Check the Bydysawd → Bydysawd Cymru → First Collection hierarchy is immediately clear.
 - [ ] Ensure the legacy project name is framed as the origin/previous identity, not the current master brand.
 
 ### Content
-- [ ] Audit all 39 character pages against the Master Character Roster and current approved profiles.
-- [ ] Confirm the seven faction names and descriptions against the current approved faction source.
+- [x] Confirmed that 39 individual character profile pages and a character index are present. Full canon-by-canon page audit remains outstanding.
+- [x] Corrected the world and collection page count to six recognised factions. The Unfactioned remains a classification / status outside formal allegiance, not a seventh faction. Full faction wording review remains outstanding.
 - [ ] Review Bydysawd Cymru world history and terminology.
 - [ ] Check Y Nos Hiraf chapter pages against the approved story canon and latest production handovers.
 - [ ] Keep unresolved character and story details out of definitive public copy.
@@ -74,6 +74,6 @@ Retain the established dark, cinematic fantasy atmosphere and neon palette. The 
 - [ ] Merge/publish only after explicit creator approval.
 - [ ] Verify the live domain, redirects, HTTPS and all key pages after launch.
 
-## Immediate next action
+## Work completed on this branch\n\n- Added this build-status and launch checklist.\n- Corrected the world and First Collection page metadata, copy and statistics to state six recognised factions.\n- Fixed the Radio Annwn page's relative navigation paths, which previously traversed too far up the directory and would have led to broken links.\n- Confirmed 39 individual character HTML pages plus the character index are present.\n\n## Immediate next action
 
 Run a systematic link/path and content-completeness audit of `redesign-preview/`. Fix issues on this working branch only, preserving the current live website until the creator approves the final launch.
