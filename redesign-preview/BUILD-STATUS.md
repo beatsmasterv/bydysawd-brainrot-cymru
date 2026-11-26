@@ -46,7 +46,7 @@ Retain the established dark, cinematic fantasy atmosphere and neon palette. The 
 ## Build and quality checklist
 
 ### Foundation and structure
-- [x] First navigation pass across the seven main hub/index pages. Corrected seven over-traversing relative links on the Radio Annwn page; the remaining chapter and individual profile-page links still need a full sweep.
+- [x] First navigation pass across the seven main hub/index pages. Corrected seven over-traversing relative links on the Radio Annwn page and five stale return links on the Barti profile page. Two chapter pages and six representative character pages have also been checked; the remaining individual profile-page links still need a full sweep.
 - [ ] Confirm every image and asset path resolves.
 - [ ] Check consistent navigation, footer and page titles across all pages.
 - [ ] Check the Bydysawd → Bydysawd Cymru → First Collection hierarchy is immediately clear.
@@ -74,6 +74,6 @@ Retain the established dark, cinematic fantasy atmosphere and neon palette. The 
 - [ ] Merge/publish only after explicit creator approval.
 - [ ] Verify the live domain, redirects, HTTPS and all key pages after launch.
 
-## Work completed on this branch\n\n- Added this build-status and launch checklist.\n- Corrected the world and First Collection page metadata, copy and statistics to state six recognised factions.\n- Fixed the Radio Annwn page's relative navigation paths, which previously traversed too far up the directory and would have led to broken links.\n- Confirmed 39 individual character HTML pages plus the character index are present.\n\n## Immediate next action
+## Work completed on this branch\n\n- Added this build-status and launch checklist.\n- Corrected the world and First Collection page metadata, copy and statistics to state six recognised factions.\n- Fixed seven incorrect relative navigation paths on the Radio Annwn page.\n- Fixed five stale return links on the Barti character page that pointed to a non-existent legacy preview filename.\n- Confirmed 39 individual character HTML pages plus the character index are present.\n\n## Immediate next action
 
 Run a systematic link/path and content-completeness audit of `redesign-preview/`. Fix issues on this working branch only, preserving the current live website until the creator approves the final launch.
